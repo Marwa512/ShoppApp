@@ -29,7 +29,7 @@ Future<void> main() async {
   print(token);
   Widget Home;
 
-  /* if (false) {
+   if (onBoarding) {
     if (token.isEmpty) {
       Home = LoginScreen();
     } else {
@@ -40,10 +40,8 @@ Future<void> main() async {
       Home = LoginScreen();
     } else {
       Home = ShopLayout();
-    
     }
-  } */
-  Home = ShopLayout();
+  }
   runApp(MyApp(Home));
 }
 
